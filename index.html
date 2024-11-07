@@ -10,29 +10,36 @@
 <body class="bg-gray-900 text-white font-sans">
 
     <!-- Navbar -->
-    <nav class="bg-gray-800 p-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-400">AlisaStream</a>
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-300 hover:text-blue-400">Home</a>
-                <a href="#features" class="text-gray-300 hover:text-blue-400">Features</a>
-                <a href="#bot-info" class="text-gray-300 hover:text-blue-400">About</a>
-                <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="text-gray-300 hover:text-blue-400">Invite</a>
+    <nav class="bg-gray-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-400">AlisaStream</a>
+                    <div class="hidden md:flex space-x-8 ml-10">
+                        <a href="#" class="text-gray-300 hover:text-blue-400">Home</a>
+                        <a href="#features" class="text-gray-300 hover:text-blue-400">Features</a>
+                        <a href="#bot-info" class="text-gray-300 hover:text-blue-400">About</a>
+                        <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="text-gray-300 hover:text-blue-400">Invite</a>
+                    </div>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-gray-300 focus:outline-none" id="menu-btn">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
         </div>
-
+        
         <!-- Mobile Menu -->
-        <div class="md:hidden" id="mobile-menu">
-            <a href="#" class="block px-4 py-2 text-gray-300 hover:text-blue-400">Home</a>
-            <a href="#features" class="block px-4 py-2 text-gray-300 hover:text-blue-400">Features</a>
-            <a href="#bot-info" class="block px-4 py-2 text-gray-300 hover:text-blue-400">About</a>
-            <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="block px-4 py-2 text-gray-300 hover:text-blue-400">Invite</a>
+        <div class="md:hidden" id="mobile-menu" style="display: none;">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">Home</a>
+                <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">Features</a>
+                <a href="#bot-info" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">About</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">Invite</a>
+            </div>
         </div>
     </nav>
 
@@ -62,36 +69,7 @@
     <!-- Bot Info Section -->
     <section id="bot-info" class="py-16 text-center max-w-4xl mx-auto">
         <h2 class="text-3xl font-bold text-blue-400 uppercase mb-8">About AlisaStream</h2>
-        <img src="https://i.imghippo.com/files/tq7599fnM.png" alt="About AlisaStream" class="w-full h-auto rounded-lg mb-8">
         <p class="text-gray-300 mb-8">AlisaStream is a high-quality music bot for Discord, offering easy-to-use commands and seamless music playback. Whether you're hosting a party or just relaxing, AlisaStream delivers the best audio experience.</p>
-        
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6">
-            <h3 class="text-xl font-semibold text-blue-400">Key Features</h3>
-            <ul class="list-disc list-inside text-left mt-4 text-gray-300 space-y-2">
-                <li>High-quality music streaming without interruptions</li>
-                <li>Supports popular platforms like YouTube and Spotify</li>
-                <li>Easy-to-use commands for everyone</li>
-                <li>Customizable settings for server admins</li>
-            </ul>
-        </div>
-
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md mb-6">
-            <h3 class="text-xl font-semibold text-blue-400">How to Invite AlisaStream</h3>
-            <p class="mt-2 text-gray-300">To invite AlisaStream to your server, click the <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="text-blue-400 underline">Invite</a> button, authorize the bot, and it’ll join your Discord server!</p>
-        </div>
-        
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-blue-400">Popular Commands</h3>
-            <ul class="list-disc list-inside text-left mt-4 text-gray-300 space-y-2">
-                <li><strong>!play [song name or URL]</strong> - Plays a song from YouTube or other supported platforms</li>
-                <li><strong>!pause</strong> - Pauses the current song</li>
-                <li><strong>!resume</strong> - Resumes the paused song</li>
-                <li><strong>!skip</strong> - Skips to the next song in the queue</li>
-                <li><strong>!stop</strong> - Stops the music and clears the queue</li>
-                <li><strong>!queue</strong> - Displays the current song queue</li>
-                <li><strong>!volume [1-100]</strong> - Adjusts the volume of the bot</li>
-            </ul>
-        </div>
     </section>
 
     <!-- Footer Section -->
@@ -101,8 +79,9 @@
 
     <script>
         // Toggle mobile menu
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
         });
     </script>
 
