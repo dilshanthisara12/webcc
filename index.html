@@ -19,6 +19,7 @@
                         <a href="#" class="text-gray-300 hover:text-blue-400">Home</a>
                         <a href="#features" class="text-gray-300 hover:text-blue-400">Features</a>
                         <a href="#bot-info" class="text-gray-300 hover:text-blue-400">About</a>
+                        <a href="#commands" class="text-gray-300 hover:text-blue-400">Commands</a>
                         <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="text-gray-300 hover:text-blue-400">Invite</a>
                     </div>
                 </div>
@@ -31,13 +32,14 @@
                 </div>
             </div>
         </div>
-        
+        
         <!-- Mobile Menu -->
         <div class="md:hidden" id="mobile-menu" style="display: none;">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">Home</a>
                 <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">Features</a>
                 <a href="#bot-info" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">About</a>
+                <a href="#commands" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">Commands</a>
                 <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-700">Invite</a>
             </div>
         </div>
@@ -72,6 +74,37 @@
         <p class="text-gray-300 mb-8">AlisaStream is a high-quality music bot for Discord, offering easy-to-use commands and seamless music playback. Whether you're hosting a party or just relaxing, AlisaStream delivers the best audio experience.</p>
     </section>
 
+    <!-- Commands Section -->
+    <section id="commands" class="py-16 text-center max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-blue-400 uppercase mb-8">Commands</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-400">!play [song name]</h3>
+                <p class="mt-2 text-gray-300">Plays the requested song.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-400">!pause</h3>
+                <p class="mt-2 text-gray-300">Pauses the currently playing song.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-400">!resume</h3>
+                <p class="mt-2 text-gray-300">Resumes the paused song.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-400">!stop</h3>
+                <p class="mt-2 text-gray-300">Stops the music and clears the queue.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-400">!queue</h3>
+                <p class="mt-2 text-gray-300">Displays the current song queue.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-blue-400">!skip</h3>
+                <p class="mt-2 text-gray-300">Skips to the next song in the queue.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="py-8 text-center bg-gray-800 text-gray-500">
         <p>&copy; 2024 AlisaStream. All rights reserved.</p>
@@ -86,4 +119,4 @@
     </script>
 
 </body>
-</html> 
+</html>
